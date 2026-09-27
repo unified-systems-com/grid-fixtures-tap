@@ -54,4 +54,4 @@ WILDCARD_LINK__grid_fixtures = "edges/WILDCARD_LINK.edge.json"
 [[boot.records]]
 name = "ci"
 description = "RESERVED NAME (req-boot-bootstrap-ci-record): the stack this plugin's own tests run in — depends_on closure + self, offline, credential-free. The consumer flips self to editable."
-sha256 = "6341a492c515e7d1f35594ec771873a16e460688a333434a53b552b37e5b59aa"
+sha256 = "a13cd2bf8d253552b22f406abe9a45242bbe67e872b1174879a741ec0e7021e5"

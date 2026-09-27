@@ -9,7 +9,8 @@
         "source": {
           "type": "git",
           "url": "https://github.com/unified-systems-com/tap-plugin-grid-fixtures",
-          "rev": "v0.3.1"
+          "rev": "v0.3.1",
+          "commit": "7f08d0780d7468590507df2a5562fe730d76e8c8"
         },
         "note": "Self, pinned like any app-of-apps record — the CONSUMER (plugin-ci boot-and-test, or `spawn --dev-plugins grid_fixtures`) substitutes the checkout under test via tap.dev_workspace (req-boot-bootstrap-ci-record-4). Booting this record unflipped runs the pinned revision."
       }
