@@ -2,7 +2,7 @@
 #
 # Identity chain (req-plugin-arch-identity — all four MUST agree, gate-enforced):
 #   slug             = "grid_fixtures"               (tap-plugin.toml slug)
-#   distribution     = "tap-plugin-grid-fixtures"    (PEP 503: slug `_`->`-`, `tap-plugin-` prefix)
+#   distribution     = "grid-fixtures-tap"    (PEP 503: slug `_`->`-`, `-tap` suffix)
 #   import namespace = "tap_plugin.grid_fixtures"    (PEP 420 native namespace; NO tap_plugin/__init__.py)
 #   entry-point key  = "grid_fixtures"               (== slug)
 #
@@ -15,7 +15,7 @@
 # (editable) from a boot profile's `install` section, and the test settings'
 # entry-point discovery-fallback makes it importable to pytest.
 [project]
-name = "tap-plugin-grid-fixtures"
+name = "grid-fixtures-tap"
 description = "TAP grid_fixtures plugin — neutral, unconstrained graph-node + edge vocabulary for grid test fixtures."
 requires-python = ">=3.14"
 dynamic = ["version"]
