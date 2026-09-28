@@ -9,7 +9,7 @@
         "source": {
           "type": "git",
           "url": "https://github.com/unified-systems-com/grid-fixtures-tap",
-          "rev": "v0.3.1"
+          "rev": "v0.3.2"
         }
       }
     ]
