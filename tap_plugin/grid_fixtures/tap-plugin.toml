@@ -1,5 +1,5 @@
 manifest_version = "0"
-plugin_version = "0.1.0"
+plugin_version = "0.3.1" # x-release-please-version
 requires_tap = ">=0.1.5"
 slug = "grid_fixtures"
 name = "Grid Fixtures"
@@ -54,4 +54,4 @@ WILDCARD_LINK__grid_fixtures = "edges/WILDCARD_LINK.edge.json"
 [[boot.records]]
 name = "ci"
 description = "RESERVED NAME (req-boot-bootstrap-ci-record): the stack this plugin's own tests run in — depends_on closure + self, offline, credential-free. The consumer flips self to editable."
-sha256 = "a13cd2bf8d253552b22f406abe9a45242bbe67e872b1174879a741ec0e7021e5"
+sha256 = "ed64120ab875d93d3db48c0d402d0821cceb7165271fb7ed2b6978a6ef8216c9"
