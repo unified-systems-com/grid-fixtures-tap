@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.2...v0.3.3) (2026-11-13)
+
+
+### Features
+
+* **grid_fixtures:** seed the tap.playground dimension node ([#27](https://github.com/unified-systems-com/grid-fixtures-tap/issues/27)) ([b29f569](https://github.com/unified-systems-com/grid-fixtures-tap/commit/b29f5697c8f542f95310d7a9be3b424ff2cabcc1))
+
 ## [0.3.2](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.1...v0.3.2) (2026-11-05)
 
 
