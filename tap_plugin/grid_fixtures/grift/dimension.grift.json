@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "grift_version": "0"
+  },
+  "_reserved": {},
+  "batches": [
+    {
+      "batch_entity": {
+        "entity_id": "01a1d2d5-d611-72cb-b0d4-7cdbe07a5d19",
+        "entity_type": "batch",
+        "name": "Grid fixtures dimensions v0.1.0",
+        "dimensions": {}
+      },
+      "batch_node": {
+        "source": "plugins.grid_fixtures",
+        "name": "Grid fixtures dimensions v0.1.0",
+        "description": "Declares the one dimension grid_fixtures writes: tap.playground, the default dimension of the pg_* query-pattern models, the PG_* wildcard edges and the canary collector. Core's dimension-map reshape (tap#708, #711) refers to dimensions by their node's id and never mints a node, so the key must be seeded before a running grid writes these types."
+      },
+      "nodes": [
+        {
+          "entity": {
+            "entity_id": "01a1d150-0000-7000-8000-000000000001",
+            "entity_type": "dimension",
+            "name": "tap.playground",
+            "dimensions": {
+              "tap.meta": "dimension"
+            }
+          },
+          "node": {
+            "name": "tap.playground",
+            "description": "Marks query-pattern fixture data: every pg_* model and PG_* edge, and the canary collector's writes, carry {\"tap.playground\": \"gridkin\"}, so the Gridkin scenario corpus and the core Gryphon suites can scope to their own fixtures. Test vocabulary only; never production data. The id matches core's test vocabulary for this key."
+          }
+        }
+      ]
+    }
+  ]
+}
