@@ -31,7 +31,8 @@
             "description": "Marks query-pattern fixture data: every pg_* model and PG_* edge, and the canary collector's writes, carry {\"tap.playground\": \"gridkin\"}, so the Gridkin scenario corpus and the core Gryphon suites can scope to their own fixtures. Test vocabulary only; never production data. The id matches core's test vocabulary for this key."
           }
         }
-      ]
+      ],
+      "edges": []
     }
   ]
 }

@@ -62,3 +62,20 @@ def test_tap_playground_has_cores_id() -> None:
 def test_the_manifest_declares_the_seed() -> None:
     manifest = tomllib.loads((PLUGIN / "tap-plugin.toml").read_text(encoding="utf-8"))
     assert manifest["grift"]["dimension"] == "grift/dimension.grift.json"
+
+
+def test_every_batch_carries_nodes_and_edges() -> None:
+    """GRIFT requires both lists on every batch, even when empty. v0.3.3 shipped a batch with no
+    ``edges`` key, which core's dimension-vocabulary import (tap#1188) rejects at boot."""
+    document = json.loads(SEED.read_text(encoding="utf-8"))
+    for batch in document["batches"]:
+        assert isinstance(batch.get("nodes"), list), batch["batch_entity"]["name"]
+        assert isinstance(batch.get("edges"), list), batch["batch_entity"]["name"]
+
+
+def test_the_seed_validates_against_cores_grift_schema() -> None:
+    """The real check: core's own document-schema validator, the one the importer runs."""
+    from tap_grid.grift import validate_grift_document
+
+    document = json.loads(SEED.read_text(encoding="utf-8"))
+    assert validate_grift_document(document) == []
