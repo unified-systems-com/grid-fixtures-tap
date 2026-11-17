@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.3...v0.3.4) (2026-11-17)
+
+
+### Bug Fixes
+
+* **grid_fixtures:** give the dimension seed batch its required edges list ([#29](https://github.com/unified-systems-com/grid-fixtures-tap/issues/29)) ([aad6560](https://github.com/unified-systems-com/grid-fixtures-tap/commit/aad6560d4f71835baa2ada06b672e4189dfed0f9))
+
 ## [0.3.3](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.2...v0.3.3) (2026-11-13)
 
 
