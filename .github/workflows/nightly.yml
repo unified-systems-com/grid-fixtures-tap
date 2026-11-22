@@ -12,8 +12,6 @@
 # The floor is proven on every push, a release is too late to be early warning, and a hardcoded
 # release ref goes stale and reds the whole run on a question nobody is asking. The input is
 # optional for exactly that reason.
-#
-# Temporary line for the live proof in unified-systems-com/tap#1287; reverted after the proof.
 name: nightly
 on:
   schedule:
