@@ -25,8 +25,9 @@ jobs:
     permissions:
       contents: read
       security-events: write
-    # tap#365 / PR# 373 - tap: plugin-ci fails closed and tests the declared floor. Move
-    # this pin to the SHA of tap main once PR# 373 merges (Renovate does not track it).
-    uses: unified-systems-com/tap/.github/workflows/plugin-ci.yml@c3b64dffca512afa852f588560f774e2b357b655
+    # Pinned to tap v0.4.9 (86f9d918), the release this plugin's 0004_spine_copies migration
+    # targets; from this pin plugin-ci also runs `makemigrations --check` over the plugin's
+    # models. Renovate does not track this pin: move it on purpose.
+    uses: unified-systems-com/tap/.github/workflows/plugin-ci.yml@86f9d918ad5ac2cce52225d3c5a4dd0596aab68e
     with:
       plugin_slug: grid_fixtures

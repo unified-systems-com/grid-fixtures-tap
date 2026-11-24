@@ -1,6 +1,6 @@
 manifest_version = "0"
 plugin_version = "0.3.4" # x-release-please-version
-requires_tap = ">=0.3.1"
+requires_tap = ">=0.4.9"  # 0004_spine_copies depends on tap_grid 0023 (core v0.4.9: spine copies, spine version 2)
 slug = "grid_fixtures"
 name = "Grid Fixtures"
 description = "Neutral core-test node + edge vocabulary — query-pattern nodes (pg_*) plus edge-constraint archetype nodes and typed/constrained edges the core suites import."
