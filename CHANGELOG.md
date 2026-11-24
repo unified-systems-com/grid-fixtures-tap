@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.5](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.4...v0.3.5) (2026-11-24)
+
+
+### Bug Fixes
+
+* ship the spine-copies migration and restamp the GRIFT document at format "1" ([6d56635](https://github.com/unified-systems-com/grid-fixtures-tap/commit/6d5663542fd111631c67f6d496f22b932f9f5569))
+* ship the spine-copies migration for core v0.4.9 ([e0257df](https://github.com/unified-systems-com/grid-fixtures-tap/commit/e0257df4baaf5f80ce594e8af97af3eaa8da497e))
+
 ## [0.3.4](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.3...v0.3.4) (2026-11-17)
 
 

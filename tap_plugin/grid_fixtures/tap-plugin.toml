@@ -1,5 +1,5 @@
 manifest_version = "0"
-plugin_version = "0.3.4" # x-release-please-version
+plugin_version = "0.3.5" # x-release-please-version
 requires_tap = ">=0.4.9"  # 0004_spine_copies depends on tap_grid 0023 (core v0.4.9: spine copies, spine version 2)
 slug = "grid_fixtures"
 name = "Grid Fixtures"
