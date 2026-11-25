@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.7](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.6...v0.3.7) (2026-11-25)
+
+
+### Bug Fixes
+
+* raise requires_tap to 0.5.0 and run plugin-ci on tap v0.5.0 ([cf44b17](https://github.com/unified-systems-com/grid-fixtures-tap/commit/cf44b1764cd11af0014db711994606f8dd2775ab))
+* ship the history event-time migration ([75f05f0](https://github.com/unified-systems-com/grid-fixtures-tap/commit/75f05f00a10b170c1eb835910c49374fd2b119e8))
+* ship the history event-time migration (tap[#1374](https://github.com/unified-systems-com/grid-fixtures-tap/issues/1374)) ([299a38f](https://github.com/unified-systems-com/grid-fixtures-tap/commit/299a38f23b8f7f5b441b3e50f6c086826ced2218))
+
 ## [0.3.6](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.5...v0.3.6) (2026-11-25)
 
 
