@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.6](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.5...v0.3.6) (2026-11-25)
+
+
+### Bug Fixes
+
+* **grift:** write the format "1" header from core's build_header in the canary ([c3fe5aa](https://github.com/unified-systems-com/grid-fixtures-tap/commit/c3fe5aad9f58bfa952f5d6e89d7ac7666b6ad4fe))
+* **grift:** write the format "1" header from core's build_header in the canary ([0e1642d](https://github.com/unified-systems-com/grid-fixtures-tap/commit/0e1642df7cd45637dc92e45a061474e38de60a52))
+
 ## [0.3.5](https://github.com/unified-systems-com/grid-fixtures-tap/compare/v0.3.4...v0.3.5) (2026-11-24)
 
 
