@@ -1,4 +1,5 @@
 # Nightly self-test (Stage 4 of unified-systems-com/tap#363, req-tap-plugin-extdev-repo-ci-12).
+# Temporary marker for the live done-test of unified-systems-com/tap#322 and #323; reverted by the next PR.
 #
 # A THIN CALLER. Everything this lane does — running the plugin against core `main`, and
 # turning a red night into one issue that the next green closes — lives in core's reusable
