@@ -25,9 +25,9 @@ jobs:
     permissions:
       contents: read
       security-events: write
-    # Pinned to tap main (3d00e4a6) until 0.5.0 is released: 0005_history_event_time depends on
-    # tap_grid 0024, which no release carries yet (it was v0.4.9, 86f9d918, for 0004_spine_copies).
-    # From this pin plugin-ci also runs `makemigrations --check` over the plugin's models. Renovate does not track this pin: move it on purpose.
-    uses: unified-systems-com/tap/.github/workflows/plugin-ci.yml@3d00e4a60355e50835d73c1f05762b5d6f8f20e2
+    # Pinned to tap v0.4.9 (86f9d918), the release this plugin's 0004_spine_copies migration
+    # targets; from this pin plugin-ci also runs `makemigrations --check` over the plugin's
+    # models. Renovate does not track this pin: move it on purpose.
+    uses: unified-systems-com/tap/.github/workflows/plugin-ci.yml@86f9d918ad5ac2cce52225d3c5a4dd0596aab68e
     with:
       plugin_slug: grid_fixtures
