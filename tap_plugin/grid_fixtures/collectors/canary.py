@@ -27,6 +27,7 @@ import uuid
 from typing import Any
 
 from tap_cares.collectors import CollectorBase
+from tap_grid.grift.upgrade import build_header
 
 logger = logging.getLogger(__name__)
 
@@ -71,7 +72,6 @@ class CanaryCollector(CollectorBase):
         alpha = _leaf("canary:leaf:alpha", "cold-boot-canary-alpha", is_open=True)
         omega = _leaf("canary:leaf:omega", "cold-boot-canary-omega", is_open=False)
         document = {
-            "metadata": {"grift_version": "0"},
             "_reserved": {},
             "batches": [
                 {
@@ -106,6 +106,9 @@ class CanaryCollector(CollectorBase):
                 }
             ],
         }
+        # Format "1" header: the spine version and every carried type's version, read from this
+        # grid's catalog once the batch is complete. Core refuses format "0" documents from 0.5.0.
+        document["metadata"] = build_header(document)
         self.submit_grift(document)
         self.summary = "Cold-boot canary: 2 leaf nodes + 1 link emitted offline."
         logger.info("[2d5f] cold-boot canary emitted its fixed offline batch")
